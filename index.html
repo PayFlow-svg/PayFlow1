@@ -38,7 +38,29 @@
 <footer>
     <p>© 2026 PayFlow. Автор: студент жобасы</p>
 </footer>
+<footer>
+    <p>© 2026 PayFlow. Автор: студент жобасы</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+<script src="script.js"></script>
+</body>
+</html>
+<section>
+    <h2>Чекті тексеру</h2>
+    <input type="text" id="checkIdInput" placeholder="Чек ID енгіз">
+    <button onclick="validateCheck()">Тексеру</button>
+    <p id="validationResult"></p>
+</section>
+
+<section>
+    <h2>Чек әрекеттері</h2>
+    <button onclick="downloadPDF()">PDF жүктеу</button>
+    <div id="qrBox"></div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
