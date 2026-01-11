@@ -26,8 +26,8 @@ function generateCheck() {
 }
 
 function downloadPDF() {
-    if (!lastCheck) {
-        alert("Алдымен чек жасаңыз");
+    if (!lastCheck || !lastCheck.id) {
+        alert("❗ Алдымен чек жасаңыз. Чек ID жоқ.");
         return;
     }
 
@@ -41,6 +41,7 @@ function downloadPDF() {
 
     pdf.save(lastCheck.id + ".pdf");
 }
+
 
 function validateCheck() {
     const inputId = document.getElementById("checkIdInput").value;
